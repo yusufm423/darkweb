@@ -13,14 +13,4 @@ applications in multilayer network communications. However, an accurate method t
 reliably identify the generating application of flow is still to be developed. Most of the
 existing techniques are based on machine learning classifiers but there are less efforts made
 to detect and characterize darknet traffic using deep learning.
-The objective of this project is to classify data into 8 different constituents of Darknet using
-various machine learning (ML) algorithms, including Decision Tree, K-Nearest Neighbors
-(KNN), Random Forest Classifier, Gradient Boosting Machine (GBM), and LightGBM. The
-classification is based on parameters such as source and destination IP, flow ID, and packet
-information. To improve classification accuracy, a novel ensemble model is proposed that
-combines different algorithms using voting techniques. Feature extraction is performed to
-identify the most useful and correlated parameters out of the 85 available. The performance
-of each classifier and the proposed model is evaluated using baseline classification, 10-fold
-cross-validation, and hyperparameter tuning. The evaluation measures used are accuracy,
-precision, recall, and F1 score. The proposed ensemble model is compared to existing
-state-of-the-art models and other classifiers
+In this project, we present a novel approach of leveraging graph-based representations. Feature matrices and adjacency matrices are derived from network flow data of CIC‑Darknet‑2020 dataset, where pairwise cosine similarity is used to construct the adjacency matrix, enabling effective graph construction. Our technique achieves an accuracy of 98.6% on this classification task, distinguishing between benign and darknet traffic with high precision.
